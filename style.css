@@ -346,3 +346,90 @@ Formatting for the .box class in the about section
   font-size: 2rem;
   color: var(--gold);
 }
+
+/*
+centering and wrapping all text within .education .row
+*/
+.education .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:1rem 0;
+  }
+  
+  /*
+  ensuring .education is align smooth with the header of this section
+  */
+  .education .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+  }
+  
+  /*
+  styling for the h3 headers in .info of .education
+  */
+  .education .row .info h3{
+    font-size: 1.5rem;
+    color:var(--gold);
+    padding:1rem 0;
+    font-weight: normal;
+  }
+
+    /*
+  styling for the h3 headers in .info of .education
+  */
+  .education .row .info h3 span{
+    padding:0 0.5rem;
+    color:var(--white);
+    font-size: 2rem;
+  }
+
+  /*
+  styling for h2 of .education in .info
+  */
+  .education .row .info h2{
+    font-size: 2rem;
+    color: var(--white);
+    padding:1rem 0;
+    font-weight: bolder;
+  }
+
+  
+  /*
+  styling for p of .education in .info
+  */
+  .education .row .info p{
+    font-size: 2rem;
+    color: var(--white);
+    padding:1rem 0;
+    font-weight: normal;
+  }
+
+  /*
+  styling for ul of .education in .info
+  */
+  .education .row .info ul{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    color: var(--gold);
+  }
+
+  
+  /*
+  styling for p ul li of .education in .info
+  */
+  .education .row .info p ul li{
+    color: var(--gold);
+  }
+
+  /*
+  styling for h1 of .education in .info
+  */
+  .education .row .info h1{
+    font-size: 2rem;
+    color: var(--white);
+    padding:1rem 0;
+    font-weight: normal;
+  }
