@@ -113,7 +113,26 @@
      <!-- projects section starts-->
      <section class="projects" id="projects">
         <h1 class="heading"> <span>Projects</span></h1>
-     </section>
+        <div class="row">
+            <div class="info">
+                <p>I've worked on many projects over the years, I have been programming for a total of 7 years now. From all these projects, whether big or small, it's not always about the end
+            goal but the learning processes and struggles to get there. Although I have a few of my recent projects on my GitHub, I have 100+ more projects that aren't featured. 
+            On the canvas below, I have recreated the mandlebrot visualization from my GitHub, from c++ to JavaScript. I decided to do this one becasue it's a fun little math project and it
+            also produces a very nice image visually as well.  
+                </p>
+            </div>
+        </div>
+        <canvas id="mandleCanvas" width="800" height="800"></canvas>
+        <div class="row">
+            <div class="info">
+              <h2>
+                  The mandlebrot set can be described simply as a set of c complex vales that orbit z = 0,
+                  following the quadratic map of Z<sub>n+1</sub>&#178; = Z<sub>n</sub>+c; Where Z = x + iy. and Z<sub>n+1</sub>
+                  remains bounded. therefore we can say c is a member of the mandlebrot set, when we start with Z&#8320; = 0.
+              </h2>
+            </div>
+        </div>
+    </section>
      <!-- projects section ends-->
      
      <!-- contact section starts-->
@@ -121,8 +140,8 @@
         <h1 class="heading"> <span>Contact</span></h1>
      </section>
      <!-- contact section ends-->
-     
+     <script src="jscode/mandlebrot.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <script src="script.js"></script>
+     <script src="jscode/script.js"></script>
 </body>
 </html>

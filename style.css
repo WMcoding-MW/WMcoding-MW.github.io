@@ -433,3 +433,45 @@ centering and wrapping all text within .education .row
     padding:1rem 0;
     font-weight: normal;
   }
+
+  /*
+  ensuring that the canvas is lined up with the header
+  */
+  .projects #mandleCanvas{
+    width: 50%;
+    height: 50%;
+    padding-left: 6rem;
+  }
+/*
+centering and wrapping all text within .projects .row
+*/
+  .projects .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+  }
+  
+  /*
+  ensuring .projects is align smooth with the header of this section
+  */
+  .projects .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+  }
+
+  .projects .row .info p{
+    font-size: 1.8rem;
+    color: var(--white);
+    padding:1rem 0;
+    font-weight: normal;
+  }
+
+  .projects .row .info h2{
+    font-size: 1.8rem;
+    color: var(--white);
+    padding:1rem 0;
+    font-weight: normal;
+  }
