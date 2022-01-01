@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+  --gold:#D4AF37;
+  --black:#333;
+  --white:#fff;
+}
+
+/*
+Open Sans font family
+*/
+
+*{ 
+  font-family: 'Open Sans', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+*::selection{
+  background:var(--gold);
+  color:var(--black);
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+  width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+  background:var(--black);
+}
+
+html::-webkit-scrollbar-thumb{
+  background:var(--gold);
+}
+
+body{
+  background:#222;
+  overflow-x: hidden;
+}
+
+header{
+  position: fixed;
+  top:0; left:0;
+  z-index: 1000;
+  height:100%;
+  width:35rem;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+header .user img{
+  height:17rem;
+  width:17rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 0.7rem solid var(--gold);
+}
+
+/**
+name size and font of user
+*/
+header .user .name{
+font-size: 3.5rem;
+color:var(--white);
+}
+
+/**
+position size and font of user
+*/
+header .user .post{
+  font-size: 1.5rem;
+  color:var(--white);
+}
+
+/**
+style of the list of items in the navbar
+*/
+header .navbar ul{
+  list-style: none;
+  padding: 1rem 3rem;
+}
+
+/**
+formatting of each element in the list
+*/
+header .navbar ul li a{
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background:var(--black);
+  color:var(--gold);
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
+/**
+changes colour to --white when hovered over
+*/
+header .navbar ul li a:hover{
+  background:var(--white);
+}
+
+#menu{
+  position: fixed;
+  top:2rem; right:2rem;
+  background:var(--black);
+  color:var(--white);
+  cursor: pointer;
+  font-size: 2.5rem;
+  padding:1rem 1.5rem;
+  z-index: 1000;
+  display:none;
+}
+
+/**
+media queries for different screen sizes
+*/
+
+/*
+reformats text size as the screens shrinks
+*/
+@media (max-width:1200px){
+
+  html{
+    font-size: 55%;
+  }
+}
+
+/*
+hides the menu as the screen shrinks
+*/
+@media (max-width:1000px){
+
+  header{
+    left:-120%;
+  }
+
+  #menu{
+    display: block;
+  }
+
+  header.toggle{
+    left:0%;
+  }
+}
+
+
+
