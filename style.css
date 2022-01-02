@@ -19,7 +19,7 @@ Open Sans font family
   box-sizing: border-box;
   text-decoration: none;
   outline: none; border: none;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
   transition: all .2s linear;
 }
 
@@ -77,6 +77,9 @@ formatting for font-awesome symbols within buttons
   font-size: 1.8rem;
 }
 
+/*
+changes button colour when hovered
+*/
 .btn:hover{
   background: var(--white);
 }
@@ -154,13 +157,16 @@ header .navbar ul li a{
   border-radius: 5rem;
 }
 
-/**
+/*
 changes colour to --white when hovered over
 */
 header .navbar ul li a:hover{
   background:var(--white);
 }
 
+/*
+general formatting for any menu objects
+*/
 #menu{
   position: fixed;
   top:2rem; right:2rem;
@@ -337,11 +343,17 @@ Formatting for the .box class in the about section
   margin: 2rem;
 }
 
+/*
+styling for the span of the .box class in the about section 
+*/
 .about .row .counter .box span{
   font-size: 4rem;
   color: var(--white);
 }
 
+/*
+styling for the span of the .box class in the about section 
+*/
 .about .row .counter .box h3{
   font-size: 2rem;
   color: var(--gold);
@@ -462,6 +474,9 @@ centering and wrapping all text within .projects .row
     padding-left: 6rem;
   }
 
+  /*
+  styling for paragraph sections in .info of .projects
+  */
   .projects .row .info p{
     font-size: 1.8rem;
     color: var(--white);
@@ -469,9 +484,60 @@ centering and wrapping all text within .projects .row
     font-weight: normal;
   }
 
+  /*
+  styling for h2 header sections in .info of .projects
+  */
   .projects .row .info h2{
     font-size: 1.8rem;
     color: var(--white);
     padding:1rem 0;
     font-weight: normal;
   }
+
+/*
+centering and wrapping all text within .projects .row
+*/
+.contact .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding:1rem 0;
+}
+
+/*
+ensuring .contact is align smooth with the header of this section
+*/
+.contact .row .info{
+  flex:1 1 48rem;
+  padding:2rem 1rem;
+  padding-left: 6rem;
+}
+
+/*
+styling for the h2 headers in .info of .contact
+*/
+.contact .row .info h2{
+  font-size: 1.8rem;
+  color: var(--white);
+  padding:1rem 0;
+  font-weight: normal;
+}
+
+/*
+styling for the h3 headers in .info of .contact
+*/
+.contact .row .info h3{
+  font-size: 2rem;
+  color:var(--gold);
+  padding:1rem 0;
+  font-weight: normal;
+}
+
+/*
+styling for the h3 <span> headers in .info of .contact
+*/
+.contact .row .info h3 span{
+color:var(--white);
+padding:0 .5rem;
+}
