@@ -197,7 +197,7 @@ reformats text size as the screens shrinks
   }
   
   /*
-centering and wrapping all text within .education .row
+centering and wrapping all text within .entry .row
 */
 .entry .row{
     display: flex;
@@ -208,43 +208,13 @@ centering and wrapping all text within .education .row
     }
     
     /*
-    ensuring .education is align smooth with the header of this section
+    ensuring .entry is align smooth with the header of this section
     */
     .entry .row .info{
       flex:1 1 48rem;
       padding:2rem 1rem;
       padding-left: 6rem;
     }
-    
-    /*
-    styling for the h3 headers in .info of .education
-    */
-    .entry .row .info h3{
-      font-size: 1.5rem;
-      color:var(--gold);
-      padding:1rem 0;
-      font-weight: normal;
-    }
-  
-      /*
-    styling for the h3 headers in .info of .education
-    */
-    .entry .row .info h3 span{
-      padding:0 0.5rem;
-      color:var(--white);
-      font-size: 2rem;
-    }
-  
-    /*
-    styling for h2 of .education in .info
-    */
-    .entry .row .info h2{
-      font-size: 2rem;
-      color: var(--white);
-      padding:1rem 0;
-      font-weight: bolder;
-    }
-  
     
     /*
     styling for p of .education in .info
@@ -259,6 +229,12 @@ centering and wrapping all text within .education .row
     .entry .row .info img{
         width: 300px; 
         height: 300px; 
+    }
+
+    .entry ol li{
+        padding-left: 0rem;
+        font-size: 1.5rem;
+        color: var(--gold);
     }
 
       /*
@@ -279,3 +255,45 @@ centering and wrapping all text within .education .row
     list-style-type: none;
 }
     
+.out{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.out div{
+    padding:1rem 0;
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: normal;
+}
+
+.out p{
+    font-size: 2rem;
+    color: var(--white);
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.input input{
+    border: 1px solid #FFFFFF;
+    font-size: 16px;
+    padding: 5px;width: 200px;
+    transform: translateX(5.3rem);
+}
+
+.input button{
+    padding:0.7rem 3rem;
+    background:var(--black);
+    color: var(--gold);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    transform: translateX(5.3rem);
+}
+
+.input button:hover{
+    background: var(--white);
+  }

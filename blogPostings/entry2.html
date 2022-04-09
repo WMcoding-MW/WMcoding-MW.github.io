@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/journal.css">
+        <script src="../jscode/blog.js"></script>
+        <script src="https://kit.fontawesome.com/1d463a88a0.js" crossorigin="anonymous"></script>
+        <title>Entry 2</title>   
+    </head>
+    <body>
+        <section class="entry" id="entry">
+            <div class="row">
+                <div class="info">
+                    <h1 class="heading"> <span>Hashing Algorithm fun</span> April 4th, 2022 <span> 1:10 pm</span></h1>
+                    <p>
+                    Started playing around with more data structures such as hashTables, fell in love with hashing functions. Using a custom hashing function I made in one
+                    of my classes, below you can input any string, as in any word. As a result it'll spit out the hash key of that word. Just something fun to play around with. 
+                    In this example I used the djb2 hashing algorithm, which uses a prime number 5381, and from this prime number preforms the following on each character in the string 
+                    inputted. hash = (hash << 5) + hash + c, where hash is the current hash seed, starting from the prime 5381, and c is the value of the char in a given string. For example
+                    if we had the word "hi", the calculation would be as follows:
+                    </p>
+                    <ol>
+                        <li> hash = ((hash << 5) + hash) + c = ((5381 << 5) + 5381) + 'h' = (172192 + 5381) + 104 = 177677</li>
+                        <li> hash = ((hash << 5) + hash) + c = ((177677 << 5) + 177677) + 'i' = (5685664 + 177677) + 105 = 5863446</li>
+                        <li> Thus the answer is 5863446. </li>
+                    </ol>
+                    <p>
+                    Of course this is only a very basic hashing algorithm that can easily be reversed, therefore it is not good for most security purposes, however it gives a good demonstration into how 
+                    these algorithms work on a basic level. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="input" id="input">
+            <input type="text" id="txtInput" placeholder="Enter a string.">
+        </section>
+        <section class="input" id="input">
+            <button type="button" onclick="hashAlgorithm();" result="output">submit</button>
+        </section>
+        <section class="out" id="out">
+            <p>djb2 hash:</p> 
+            <div class="output" id="output"> empty</div>  
+        </section>
+        
+        <section class="back" id="back">
+            <ul>
+                <li><br><a href="../blog.html" <button class="btn"> blog home </button></a></li>
+                <li><br><a href="../index.html" <button class="btn"> portfolio <i class="fas fa-house-user"></i></button></a></li>
+                <li><br><a href="../blogPostings/entry1.html" <button class="btn"> last entry <i class="fas fa-angle-left"></i></button></a></li>
+               <!--<li><br><a href="../blogPostings/entry3.html" <button class="btn"> next entry <i class="fas fa-angle-right"></i></button></a></li>-->
+               <!--not needed till entry 3 is added at a later date.-->
+            </ul>
+        </section>
+    </body>
+</html>
