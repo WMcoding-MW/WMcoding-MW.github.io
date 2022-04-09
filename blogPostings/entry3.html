@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/journal.css">
+        <script src="https://kit.fontawesome.com/1d463a88a0.js" crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <title>Entry 3!!</title>   
+    </head>
+    <body>
+        <script>
+            MathJax = {
+              tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+            };
+        </script>
+        <section class="entry" id="entry">
+            <div class="row">
+                <div class="info">
+                    <h1 class="heading"> <span>Discrete Math Terminology</span> April 4th, 2022 <span> 3:25 PM</span></h1>
+                    <p>The world of Discrete Mathematics is a very large and wide field of study. It branches into quite a few different areas
+                        of mathematics such as abstract algebra, real analysis, topology, graph theory, combinatorics just to name a few. Below are some common
+                        terms you'd see in an intro discrete mathematics courses, as well as their meanings.
+                    </p>
+                    <ul>
+                        <li>Basic Quantifiers</li>
+                        <p>$\forall$ means for all, i.e.: $\forall x \in \mathbb{Z}$ which reads "for all x is an element of the integers (or Z)"</p>
+                        <p>$\exists$ means there exists, i.e.: $\exists x \in \mathbb{Z}$ which reads "there exists an x in the integers (or in Z)"</p>
+                        <p>Let X and Y be statements, we define X => Y as if X then Y, and X<=>Y as X if and only if Y.</p>
+                        <p>Ex: Let X = "I love to run" and Y = "The sky is red". X=>Y reads "If I love to run, then the sky is red.". X<=>Y reads "I love to run, if and only if the sky is red.".</p>
+                        <p> X=>Y is false when X is true and Y is false. X<=>Y is false when either X is true and Y is false or Y is true and X is false.</p>
+                        <p>The converse is defined as reversing the two statements, such as for example X=>Y the converse would be Y=>X</p>
+                        <p>The contrapositive is defined as reversing and negating the two statements such as X=>Y would be ~Y=>~X</p>
+                        <p>A quick example of a negation would be let P="I love to run", ~P="I hate to run".</p>
+                        <li>Sets</li>
+                        <p>common sets you'll see are: $\mathbb{Z}, \mathbb{C}, \mathbb{Q}, \mathbb{R}, \mathbb{N}$. Which are Integers, Complex Numbers, Irrational Numbers,
+                        Real Numbers and Natural Numbers respectively. </p>
+                        <p>suppose X and Y are sets, we define subsets as $\forall x \in X, x \in Y$, where X and Y are sets. If this is true, it's denoted at $X \subseteq Y$</p>
+                        <p>Now with this definition, we can make a subset list of the common sets: $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{R} \subset \mathbb{C}$ Just as an example</p>
+                        <p>Next follows logical quantifiers, suppose X and Y are sets, then it follows that X $\cap$ Y, X $\cup$ Y and X $\times$Y. Which are intersection/and, union/or and the cross product respectively.</p>
+                        <p>Let X and Y be sets. X $\cap$ Y :={x : $x\in X$ and $x\in Y$}, : means such that. X $\cup$ Y :={x : $x\in X$ or $x\in Y$}, and X $\times$Y :={(x,y) : $x\in X$ and $y\in Y$}</p>
+                        <p>Ex: Let X={1,2,3}, Y={1,2}. Then it follows that  X $\cap$ Y = {1,2} and X $\cup$ Y = {1,2,3} X $\times$Y = {(1,1),(1,2),(2,1),(2,2),(3,1),(3,2)}</p>
+                        <li>Functions</li>
+                        <p>Let X: domain and Y: codomain, where X and Y are sets.</p>
+                        <p>Define f:X->Y such that x$|\to$y, where x$\in X$ and y$\in$Y$</p>
+                        <p>Where we say f is a function from X to Y such that x is mapped to y, where x is an element of X and y is an element of Y.</p>
+                        <p>We say f is injective(one-to-one) if f(x) = f(q), then x = q, where x,y$\in X$. An example would be f:$\mathbb{Z}$->$\mathbb{Z}$ under the usual mapping.</p>
+                        <p>We say f is surjective(onto) $\forall x\in X, \exists y \in Y$ such that f(x) = y. An example would be f:$\mathbb{Z}$->$\mathbb{Z}$ under the usual mapping.</p>
+                        <p>We say f is bijective if f is surjective and injective.</p>
+                        <p>Im(f):={x$\in X$ : f(x)$\in Y$}, this is called the image of f.</p>
+                        <p>The preimage(inverse image) is denoted as $f^{-1}(y)$:={$y\in Y$ : $f^{-1}(y)\in X$}</p>
+                        <li>Partitions and modulo</li>
+                        <p>A partition is the map of two sets under a strict condition, to say lightly.</p>
+                        <p>Ex: Consider the map f:$\mathbb{Z}\to\frac{\mathbb{Z}}{n\mathbb{Z}}$, where this mapping is defined as $x|\to [x]_n$, where $x\in\mathbb{Z},n\in\mathbb{Z}_{>0}$</p>
+                        <p>side note, $\frac{\mathbb{Z}}{n\mathbb{Z}}$ simply means the integers modulo n.</p>
+                        <p>from this mapping f, we can see that if we let n = 2, we get that x mod 2 must equal 0 or 1. resulting in two congruent classes $[x]_0,[x]_1$, which then partition the set $\mathbb{Z}$
+                            into the following set of {$[x]_0,[x]_1$}.
+                        </p>
+                    </ul>
+                    <p>This is just scratching the surface into discrete mathematics, There is still ALOT I did not cover in here. Below is a few example proofs that I have done in my courses.</p>
+                    <p>Ex1: The given question is "U is a subspace of V if and only if  U is non empty and $\forall\vec{u},\vec{v}\in U$ and k$\in \mathbb{R}$, $\vec{u} + k\vec{v}\in U$". Firstly, since we're dealing with an if and only if proof, we have to prove it in two directions.
+                        Statement: If U is a subspace of V, then U is non empty and $\forall\vec{u},\vec{v}\in U$ and k$\in \mathbb{R}$, $\vec{u} + k\vec{v}\in U$. 
+                        Suppose U is subspace of V, where V is a real vector space. By the axioms in the subspace test, we know that U contains the zero vector, as-well as U is closed under addition and scalar multiplication. since U is closed under scalar multiplication, We know if $\vec{v}\in U$ and $ k \in \mathbb{R}$, then $k\vec{v}\in U$. Since we know U is closed under addition, if $\vec{u},\vec{p}\in U$, then $\vec{u}+\vec{p}\in U$. If we let p = $k\vec{v}$, since U is closed under scalar multiplication, we can see that $\vec{u}+\vec{p}=\vec{u} + (k\vec{v})\in U$. Finally, to prove U is non empty, since U is a subspace of V, we know that U must contain a zero vector, Thus U is non empty. Therefore in conclusion If U is a subspace of V, then U is non empty and $\forall\vec{u},\vec{v}\in U$ and k$\in \mathbb{R}$, $\vec{u} + k\vec{v}\in U$.        
+                        Statement: If U is non empty and $\forall\vec{u},\vec{v}\in U$ and k$\in \mathbb{R}$, $\vec{u} + k\vec{v}\in U$, then U is a subspace of V. 
+                        Suppose V is a real vector space and let U be a subset of V. Suppose U is nonempty and  $\forall\vec{u},\vec{v}\in U$ and k$\in \mathbb{R}$, $\vec{u} + k\vec{v}\in U$. Let F=$\{k\vec{v}$ : $\forall k\in R,\vec{v}\in U\}$ which is the set of all scalar multiples of $\vec{v}$. In order to prove the statement proposed, I will prove closure under addition, then U contains a zero vector, and finally closure under multiplication. Since we know $\forall\vec{u},\vec{v}\in U$ and k$\in \mathbb{R}$, $\vec{u} + k\vec{v}\in U$, if we let $\vec{p}\in F$, we can see that $\vec{u} + k\vec{v} = \vec{u} + (\vec{p})  \in U $, thus U is closed under addition. Next since U is closed under addition, if we let $\vec{q} = -\vec{u}$, we can easily verify that $\vec{q} \in F$, thus it follows that  $\vec{u} + k\vec{v} = \vec{u} + \vec{q} = \vec{u} + -\vec{u} = \vec{0} \in U$. Therefore we can conclude that $\vec{0}\in U$. Finally, since $\vec{0}\in U$ it follows that if we let $\vec{u} = \vec{0}$, since we know U is closed under addition,  $\vec{u} + k\vec{v} = \vec{0} +  k\vec{v} =  k\vec{v} \in U$ thus U is closed under scalar multiplication. Thus I can conclude that U is a subspace of V since U passes all the subspace tests.  
+                        Since the statement "U is a subspace of V if and only if  U is non empty and $\forall\vec{u},\vec{v}\in U$ and k$\in \mathbb{R}$, $\vec{u} + k\vec{v}\in U$" was proved $\Rightarrow$ and $\Leftarrow$, I can conclude the statement is true. </p>
+                    <p>Ex2: 
+                        we have to prove that 
+                        $$||A||_{\infty} = \max\limits_{1 \leq i \leq n} \sum_{j=1}^n|a_{i,j}|$$
+                        Firstly, Let's start with the left hand side $||A||_{\infty}$ according to the definition of a matrix norm of 
+                        $$||A|| = \max\limits_{x\neq0}\frac{||Ax||}{||x||}$$ 
+                        we can say that
+                        $$||A||_{\infty} = \max\limits_{||x||_{\infty} = 1}||Ax||_{\infty}$$
+                        Thus we can say that, by the definition of a vector norm
+                        $$||x||_{\infty} = \max\limits_{1\leq i \leq n}|x_i|$$
+                        we can say that
+                        $$||A||_{\infty} = \max\limits_{||x||_{\infty} = 1}\max\limits_{1 \leq i \leq n}|\sum_{j=1}^n a_{i,j}x_j|$$
+                        $$||A||_{\infty} = \max\limits_{||x||_{\infty} = 1}\max\limits_{1 \leq i \leq n}\sum_{j=1}^n |a_{i,j}||x_j|$$
+                        $$||A||_{\infty} = \max\limits_{||x||_{\infty} = 1}(\max\limits_{1 \leq i \leq n}\sum_{j=1}^n |a_{i,j}|)\max\limits_{1 \leq j \leq n}|x_j|$$
+                        $$||A||_{\infty} = \max\limits_{||x||_{\infty} = 1}(\max\limits_{1 \leq i \leq n}\sum_{j=1}^n |a_{i,j}|)||x||_{\infty}$$ since we can see that the max of ||x|$|_{\infty} = 1$ we can then say that 
+                        $$||A||_{\infty} = (\max\limit_{1 \leq i \leq n}\sum_{j=1}^n |a_{i,j}|)(1)$$
+                        Thus, 
+                        $$||A||_{\infty} = \max\limits_{1 \leq i \leq n} \sum_{j=1}^n|a_{i,j}|$$
+                    </p>    
+                    <p>This concludes my examples, Hopefully the read was enjoyable!</p>
+                </div>
+            </div>
+        </section>
+        <section class="back" id="back">
+            <ul>
+                <li><br><a href="../blog.html" <button class="btn"> blog home </button></a></li>
+                <li><br><a href="../index.html" <button class="btn"> portfolio <i class="fas fa-house-user"></i></button></a></li>
+                <li><br><a href="../blogPostings/entry2.html" <button class="btn"> previous entry <i class="fas fa-angle-right"></i></button></a></li>
+            </ul>
+        </section>
+    </body>
+</html>

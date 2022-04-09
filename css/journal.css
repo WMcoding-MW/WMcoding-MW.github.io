@@ -236,6 +236,12 @@ centering and wrapping all text within .entry .row
         font-size: 1.5rem;
         color: var(--gold);
     }
+    
+    .entry ul li{
+      padding-left: 0rem;
+      font-size: 1.5rem;
+      color: var(--gold);
+  }
 
       /*
 centering and wrapping all text within .education .row

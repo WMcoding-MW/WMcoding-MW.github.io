@@ -29,13 +29,16 @@ var cy = cytoscape({
         { data: { id: 'root', name: 'Hello World/Root', href: './blogPostings/entry1.html' } },
         { data: { id: 'e1', name: 'Hashing Algorithms', href: './blogPostings/entry2.html' } },
         { data: { id: 'math', name: 'World Of Math', href: './oops.html'} },
-        { data: { id: 'cs', name: 'Computer Science', href: './oops.html'} }
+        { data: { id: 'cs', name: 'Computer Science', href: './oops.html'} },
+        { data: { id: 'e2', name: 'Basic Discrete Math Terminology', href: './blogPostings/entry3.html'} }
         
       ],
       edges: [
         { data: { source: 'root', target: 'math' } },
         { data: { source: 'root', target: 'cs' } },
-        { data: { source: 'cs', target: 'e1' } }
+        { data: { source: 'cs', target: 'e1' } },
+        { data: { source: 'math', target: 'e1' } },
+        { data: { source: 'math', target: 'e2' } }
 
       ]
     },
