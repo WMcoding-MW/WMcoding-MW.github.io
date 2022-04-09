@@ -26,17 +26,23 @@ var cy = cytoscape({
   
     elements: {
       nodes: [
-        { data: { id: 'e0', name: 'Journal 1', href: './blogPostings/entry1.html' } },
-        { data: { id: 'e1', name: 'Journal 2', href: './blogPostings/entry2.html' } }
+        { data: { id: 'root', name: 'Hello World/Root', href: './blogPostings/entry1.html' } },
+        { data: { id: 'e1', name: 'Hashing Algorithms', href: './blogPostings/entry2.html' } },
+        { data: { id: 'math', name: 'World Of Math', href: './oops.html'} },
+        { data: { id: 'cs', name: 'Computer Science', href: './oops.html'} }
+        
       ],
       edges: [
-        { data: { source: 'e0', target: 'e1' } }
+        { data: { source: 'root', target: 'math' } },
+        { data: { source: 'root', target: 'cs' } },
+        { data: { source: 'cs', target: 'e1' } }
+
       ]
     },
   
     layout: {
-      name: 'grid',
-      padding: 10
+      name: 'random',
+      //padding: 10
     }
   });
   
