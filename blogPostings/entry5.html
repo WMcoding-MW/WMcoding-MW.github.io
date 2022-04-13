@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/journal.css">
+        <script src="https://kit.fontawesome.com/1d463a88a0.js" crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <title>Entry 5</title>   
+    </head>
+    <body>
+        <script>
+            MathJax = {
+              tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+            };
+        </script>
+        <section class="entry" id="entry">
+            <div class="row">
+                <div class="info">
+                    <h1 class="heading"> <span>Intro to groups(Symmetric and Basic properties)</span> April 13th, 2022 <span> 12:54 PM</span></h1>
+                    <p>Def: A pair (G, *) where G is a set and * is a binary operation on G,G is called a group if:
+                    </p>
+                    <p>1) (Associativity) $\forall a,b,c \in G$ a * (b * c) = (a * b) * c</p>
+                    <p>2) (identity element) $\exists e \in G : \forall a \in G$ a * e = e * a = a (=> G $\neq \emptyset$, since e$\in$G)</p>
+                    <p>3) (inverse element) $\forall a \in G: \exists b \in G$ a * b = b * a = e</p>
+                    <p>further more, a group (G, *) is called abelian if a*b = b*a. (also known as communative groups)</p>
+                    <ul>
+                        <li>Exercises: </li>
+                        <p>1) ($\mathbb{Z}$, +) is a group with e = 0 and inverse of a is -a. (Verify)</p>
+                        <p>2) ($\mathbb{R}_{>0}$, x) is a group. Associative: a * (b * c) = (a * b) * c, since a,b,c>0</p>
+                        <p>Identity is 1, a * 1 = 1 * a = a. finally inverse: if a$\in\mathbb{R}_{>0}$ then $\frac{1}{a}\in\mathbb{R}_{>0}$, thus a * $\frac{1}{a}$ = $\frac{1}{a}$ * a = 1.</p>
+                        <p>Thus ($\mathbb{R}_{>0}$, x) is a group. (side note, avoid $\frac{1}{a}$, use $a^{-1}$ instead. it'll be important later.)</p>
+                        <p>Ex of a non abelian group: $GL_2(\mathbb{R})$:={$\begin{bmatrix}
+                            a & b \\
+                            c & d \\
+                          \end{bmatrix} : a,b,c,d\in\mathbb{R}$ and $ad-bc \neq 0$} (important group remember this!). (Not a group under multiplication as well)
+                        </p>
+                        <p>3)If (G, *) is a group, then (G, *') is also a group where a*'b = b*a $\forall a,b\in G$. (Verify!)</p>
+                        <li>Important groups: permutations and symmetric groups</li>
+                    <p>Let X be a non empty set, we define $S_X$ := {$\sigma: X\to X$ | $\sigma$ is a bijection}. Binary operations on $S_X$ are defined as $S_X$ x $S_X \to S_X$ s.t. ($\sigma$,e) = $\sigma$ o e.</p>
+                    <p>proof: Associativity is okay since composition of maps is Associative.</p>
+                    <p>Identity: x$|\to$x is the identity element.</p>
+                    <p>Inverse: Since $\sigma \in S_X$ is a bijiection, $\exists \sigma^{-1} \in S_X$ s.t. $\sigma$ o $\sigma^{-1}$ = $\sigma^{-1}$ o $\sigma = e$</p>
+                    <p>Def: ($S_X$, o) is called the symmetric group on X.</p>
+                    <p>Def: if X = {1,2,...,m}, where m$\in \mathbb{Z}_{>0}$, then $S_X$ = {1,2,...,m} is denoted by $S_m$ and called the symmetric group of degree m. (it's the group of permutations of m elements).</p>
+                    <p>Ex m=3: $\sigma \in S_3$ can be represented as a matrix of size 2 x m $\begin{bmatrix} 1 & 2 & 3 \\ \sigma(1) & \sigma(2) & \sigma(3) \end{bmatrix}$ where $\sigma(1), \sigma(2), \sigma(3)$
+                        is a permutation of 123. for example,  $\sigma = \begin{bmatrix} 1 & 2 & 3 \\ 1 & 3 & 2 \end{bmatrix}$, $\phi = \begin{bmatrix} 1 & 2 & 3 \\ 2 & 3 & 1 \end{bmatrix}$, then
+                        $\sigma$ o $\phi = \begin{bmatrix} 1 & 2 & 3 \\ 3 & 2 & 1 \end{bmatrix}$. Note $\sigma = \sigma^{-1}$ and $\phi^{-1} =  \begin{bmatrix} 1 & 2 & 3 \\ 3 & 1 & 2 \end{bmatrix}$.
+                    </p>
+                    <p>IMPORTANT NOTATION: more compact version of matrix representation is known as cycle notation ex (12)$\in S_3, 1|\to 2|\to 1$ and 3 is fixed. (note (12) and (21) are equivalent.)</p>
+                    </ul>
+                   <p>In the next entry, I'll cover more cycles and permutation group stuff!</p>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="back" id="back">
+            <ul>
+                <li><br><a href="../blog.html" <button class="btn"> blog home </button></a></li>
+                <li><br><a href="../index.html" <button class="btn"> portfolio <i class="fas fa-house-user"></i></button></a></li>
+                <li><br><a href="../blogPostings/entry4.html" <button class="btn"> previous entry <i class="fas fa-angle-left"></i></button></a></li>
+                <li><br><a href="../blogPostings/entry5.html" <button class="btn"> next entry <i class="fas fa-angle-right"></i></button></a></li>
+            </ul>
+        </section>
+    </body>
+</html>

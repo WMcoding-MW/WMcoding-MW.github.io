@@ -32,7 +32,8 @@ var cy = cytoscape({
         { data: { id: 'cs', name: 'Computer Science', href: './oops.html'} },
         { data: { id: 'e2', name: 'Basic Discrete Math Terminology', href: './blogPostings/entry3.html'} },
         { data: { id: 'AA', name: 'Abstract Algebra', href: './blogPostings/abstractAlgebra.html'} },
-        { data: { id: 'e3', name: 'Binary Operations', href: './blogPostings/entry4.html'} }
+        { data: { id: 'e3', name: 'Binary Operations', href: './blogPostings/entry4.html'} },
+        { data: { id: 'e4', name: 'Intro to groups (Symmetric and basic group properties)', href: './blogPostings/entry5.html'} }
 
         
       ],
@@ -44,7 +45,8 @@ var cy = cytoscape({
         { data: { source: 'math', target: 'e2' } },
         { data: { source: 'math', target: 'AA' } },
         { data: { source: 'AA', target: 'e2' } },
-        { data: { source: 'AA', target: 'e3'} }
+        { data: { source: 'AA', target: 'e3'} },
+        { data: { source: 'e4', target: 'e3'} }
 
 
       ]
