@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/journal.css">
+        <script src="https://kit.fontawesome.com/1d463a88a0.js" crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <title>Entry 3!!</title>   
+    </head>
+    <body>
+        <script>
+            MathJax = {
+              tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+            };
+        </script>
+        <section class="entry" id="entry">
+            <div class="row">
+                <div class="info">
+                    <h1 class="heading"> <span>Binary Operations</span> April 13th, 2022 <span> 10:20 AM</span></h1>
+                    <p>Def: A binary operation on a non-empty set S is a map B: S x S $\to$ S. "*" is usually used to define a binary operation. Another side note, usually 
+                        you see the following notation (M, *) where M is the set, and * is the binary operation preformed on that set.
+                    </p>
+                    <ul>
+                        <li>Unpacking it: </li>
+                        <p>S x S := {(a,b) : a,b$\in$S}.</p>
+                        <p>S x S $\to$ S</p>
+                        <p>(a,b) |$\to$ a * b</p>
+                        <li>Examples: </li>
+                        <p>1) ($\mathbb{Z}$,*) where a*b=a-b. Find if this operation is communative (a*b = b*a) and associative (a * b) * c = a * (b * c)(will be discussed more next entry).</p>
+                        <p>Solution: Communative: a - b = b - a, let a = 1, b = 2, then 1 - 2 = 2 - 1 => -1 $\neq$ 1. </p>
+                        <p>Associative: a - (b - c) = (a - b) - c, let a = 1, b = 2, c = 3, then 1 - (2 - 3) = (1 - 2) - 3 => 2 $\neq$ -2</p>
+                        <p>Thus I can conclude the binary operation a-b on the integers is not Communative or Associative.</p>
+                        <p>2) ($\mathbb{R}$, *), where a*b = a+b-ab. Find if this operation is Communative and Associative.</p>
+                        <p>Solution: Communative: a*b=b*a => a+b-ab = b+a-ba, since we're under normal algebraic structures the following is acceptable. a+b-ab = b+a-ba => -ab = -ba => a = a</p>
+                        <p>Associative: a * (b * c) = (a * b) * c => (a*b) + c - (a*b) = a + (b*c)-a(b*c) => a+b-ab+c-(a+b-ab)c = a+(b+c-bc)-a(b+c-bc)=>a+b+c-ab-ac-bc+abc=a+b+c-bc-ab-ac+abc, Thus Associative.</p>
+                        <p>for fun let's check for an inverse: e * a = a * e = e (see this more next node.), It's sufficent to check e * a = a. e * a = a => e + a - ea = a => e - ea = 0.
+                            let e = 0, since 0$\in\mathbb{R}$, we can see e -ea = 0 => 0 - 0a = 0 => 0 = 0. Thus an inverse exists, and 0 is the identity element. (e is usually denoted as the identity element in a group).
+                        </p>
+                        <p>Finally ($\mathbb{R}$, *), where a*b = a+b-ab is associative, communative and has an identity/invertible.</p>
+                    </ul>
+                    <p>Hopefully this is a good intro to binary operations. In the next entry we'll discuss group theory yay!</p>
+                </div>
+            </div>
+        </section>
+        <section class="back" id="back">
+            <ul>
+                <li><br><a href="../blog.html" <button class="btn"> blog home </button></a></li>
+                <li><br><a href="../index.html" <button class="btn"> portfolio <i class="fas fa-house-user"></i></button></a></li>
+                <li><br><a href="../blogPostings/abstractAlgebra.html" <button class="btn"> previous entry <i class="fas fa-angle-left"></i></button></a></li>
+                <li><br><a href="../blogPostings/entry4.html" <button class="btn"> next entry <i class="fas fa-angle-right"></i></button></a></li>
+            </ul>
+        </section>
+    </body>
+</html>
