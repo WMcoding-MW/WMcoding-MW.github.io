@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/journal.css">
+        <script src="https://kit.fontawesome.com/1d463a88a0.js" crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <title>Entry 7</title>   
+    </head>
+    <body>
+        <script>
+            MathJax = {
+              tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+            };
+        </script>
+        <section class="entry" id="entry">
+            <div class="row">
+                <div class="info">
+                    <h1 class="heading"> <span>Order of a group/element and inverses</span> April 15th, 2022 <span> 10:58 AM</span></h1>
+                    <p>Def: For a group (G,*) (we often just denote this as G, since a binary operation is implied) the  number of elements (cardinal) of G is denoted as |G| and called
+                        the order of the group G. (can be infinite)
+                    </p>
+
+                   <p>Ex: ($\mathbb{Z}$,+) has infinite order, ($S_m$, o) has an order of m!.</p>
+                   <ul>
+                       <li>Some properties of groups</li>
+                       <p>Let G be a group</p>
+                       <p>The identity element, $e_G$ is unique.</p>
+                       <p>proof: for the sake of contradiction, let e and i be two unique identity elements of G. 1) e * a = a * e = a, 2) i * a = a * i = a, $\forall a \in G$. but i = e * i = e, thus they must be the same which contradicts our assumption.</p>
+                       <p>The inverse of an element is unique. Lemme: (Cancellation lemma) 1)a*b = a*c and 2)b*a = c*a both imply that b=c $\forall a,b,c \in G.$</p>
+                       <p>Proof: 1) multiply by $a^{-1}$ on the left. $a^{-1}$ * (a * b) = $a^{-1}$ * (a * c) =>  $(a^{-1}$ * a) * b = ($a^{-1}$ * a) * c => e*b=e*c, thus b=c. similar proof follows for 2, just do it on the right.</p>
+                       <p>Remark: a*b=c*a DOES NOT IMPLY b=c.</p>
+                       <p>Proof of uniquness of inverses: let b,c be inverses of a, then b*a = e = c*a. with the cancellation lemma we can see b = c.</p>
+                       <p>Powers of an element of a group G. Let m$\in \mathbb{Z}$, $g \in G$. g^m := {e if m = 0, g * g * ... * g if m > 0, $g^{-1} * g^{-1} * ... * g^{-1}$ if m < 0}</p>
+                       <p>Ex: G = $\frac{\mathbb{Z}}{2\mathbb{Z}}, g=[1]_2$</p>
+                       <p>Then $g^{-1} = [-1]_2 = [1]_2, g^0 = e = [0]_2, g^1 = [1]_2, g^2 = [1]_2 + [1]_2 = [2]_2 = [0]_2, g^3 = [3]_2 = [1]_2 and so on.</p>
+                       <p>Remark: Because of Associativity in groups, it doesn't matter where one puts the paranthesis in the product.</p>
+                       <p>Note: However some don't necesarily have $(g*h)^m \neq g^m * h^m. </p>
+                       <p>Ex: m = 2 then $(g*h)^2 = g * h * g * h = g^2 * h^2 = g * g * h * h <=> h*g = g*h.$</p>
+                       <p>Inverse of a product</p>
+                       <p>1) $(a*b)^{-1}$ = $b^{-1} * a^{-1}$</p>
+                       <p>2) $(a_1 * a_2 * ... * a_m)^{-1} = a_m^{-1} * ... * a_2^{-1} * a_1^{-1}</p>
+                       <p>Proof: $(a*b) * (b^{-1} * a^{-1})$ = e => $a*(b * b^{-1}) * a^{-1}$ = e => $a * e * a^{-1}$ = e => e=e, thus $(a*b)^{-1}$ = $b^{-1} * a^{-1}$</p>
+                       <p>remark: In ($\mathbb{Z},+), g^2$ when g = 3;
+                         $g^2$=g*g=3+3=6 so $3^2$ = 6, Since the binary operation is addition.
+                       </p>
+                   </ul>
+                </div>
+            </div>
+        </section>
+        <section class="back" id="back">
+            <ul>
+                <li><br><a href="../blog.html" <button class="btn"> blog home </button></a></li>
+                <li><br><a href="../index.html" <button class="btn"> portfolio <i class="fas fa-house-user"></i></button></a></li>
+                <li><br><a href="../blogPostings/entry6.html" <button class="btn"> previous entry <i class="fas fa-angle-left"></i></button></a></li>
+                <li><br><a href="../blogPostings/entry8.html" <button class="btn"> next entry <i class="fas fa-angle-right"></i></button></a></li>
+            </ul>
+        </section>
+    </body>
+</html>

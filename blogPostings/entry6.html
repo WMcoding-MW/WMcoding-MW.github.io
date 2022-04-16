@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/journal.css">
+        <script src="https://kit.fontawesome.com/1d463a88a0.js" crossorigin="anonymous"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <title>Entry 6</title>   
+    </head>
+    <body>
+        <script>
+            MathJax = {
+              tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+            };
+        </script>
+        <section class="entry" id="entry">
+            <div class="row">
+                <div class="info">
+                    <h1 class="heading"> <span>More on Symmetric groups and cycles</span> April 14th, 2022 <span> 6:08 PM</span></h1>
+                    <p>Def: Let $k$, ... ,$k_n \in$ {1,...,m} be distinct, n $\leq$m, Then the permutation of $S_m$ which sends $k_1 |\to k_2$, ... , $k_{n-1} |\to k_n$ and $k_n |\to k_1$
+                        and fixes all other numbers is denoted ($k_1k_2...k_n$) and called an r-cycle (cycle of length r).
+                    </p>
+                    <p>Remark: The only 1-cycle is the identity permutation on $S_n$, (1)=(2)=...=(m).</p>
+                    <p>Def: Cycles of length $\geq$ 2 $\in S_m$ are disjoint if they involve disjoint sets of numbers. Ex: (12),(34) are disjoint in $S_n$ but (12),(31) are not.</p>
+                    <p>Remark: Actually every permutation in $S_n \neq Id_{S_n}$ can be written as a product of disjoint cycles of length $\geq$ 2. Moreover, this factorization 
+                        is unique up to the order of the factors. Ex in $S_5$: (145) o (23) = (23) o (145) => we can't hope for unicity of the decomponents.
+                    </p>
+                    <p>Sketch of the proof:let $\sigma \in S_m$. Take a number $k \in$ {1,...,m} and consider $k, \sigma(k), \sigma (\sigma(k)),...$ and $k_1, k_2, k_3, ...$ It must come back to the previous value since the maximal value of k is m.
+                        Thus this results in a cycle.
+                    </p>
+                  
+                </div>
+            </div>
+        </section>
+        <section class="back" id="back">
+            <ul>
+                <li><br><a href="../blog.html" <button class="btn"> blog home </button></a></li>
+                <li><br><a href="../index.html" <button class="btn"> portfolio <i class="fas fa-house-user"></i></button></a></li>
+                <li><br><a href="../blogPostings/entry5.html" <button class="btn"> previous entry <i class="fas fa-angle-left"></i></button></a></li>
+                <li><br><a href="../blogPostings/entry7.html" <button class="btn"> next entry <i class="fas fa-angle-right"></i></button></a></li>
+            </ul>
+        </section>
+    </body>
+</html>

@@ -33,8 +33,10 @@ var cy = cytoscape({
         { data: { id: 'e2', name: 'Basic Discrete Math Terminology', href: './blogPostings/entry3.html'} },
         { data: { id: 'AA', name: 'Abstract Algebra', href: './blogPostings/abstractAlgebra.html'} },
         { data: { id: 'e3', name: 'Binary Operations', href: './blogPostings/entry4.html'} },
-        { data: { id: 'e4', name: 'Intro to groups (Symmetric and basic group properties)', href: './blogPostings/entry5.html'} }
-
+        { data: { id: 'e4', name: 'Intro to groups (Symmetric and basic group properties)', href: './blogPostings/entry5.html'} },
+        { data: { id: 'e5', name: 'More on Symmetric groups and cycles', href: './blogPostings/entry6.html'} },
+        { data: { id: 'e6', name: 'Order of a group/element and inverses', href: './blogPostings/entry7.html'} },
+        { data: { id: 'e7', name: 'Subgroups and center of a group', href: './blogPostings/entry8.html'} }
         
       ],
       edges: [
@@ -46,7 +48,11 @@ var cy = cytoscape({
         { data: { source: 'math', target: 'AA' } },
         { data: { source: 'AA', target: 'e2' } },
         { data: { source: 'AA', target: 'e3'} },
-        { data: { source: 'e4', target: 'e3'} }
+        { data: { source: 'e4', target: 'e3'} },
+        { data: { source: 'e5', target: 'e4'} },
+        { data: { source: 'e6', target: 'e5'} },
+        { data: { source: 'e6', target: 'e4'} },
+        { data: { source: 'e7', target: 'e6'} }
 
 
       ]
