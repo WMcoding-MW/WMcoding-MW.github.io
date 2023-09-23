@@ -36,8 +36,9 @@ var cy = cytoscape({
         { data: { id: 'e4', name: 'Intro to groups (Symmetric and basic group properties)', href: './blogPostings/entry5.html'} },
         { data: { id: 'e5', name: 'More on Symmetric groups and cycles', href: './blogPostings/entry6.html'} },
         { data: { id: 'e6', name: 'Order of a group/element and inverses', href: './blogPostings/entry7.html'} },
-        { data: { id: 'e7', name: 'Subgroups and center of a group', href: './blogPostings/entry8.html'} }
-        
+        { data: { id: 'e7', name: 'Subgroups and center of a group', href: './blogPostings/entry8.html'} },
+        { data: { id: 'e8', name: 'Music Recommendation System', href: './blogPostings/entry9.html'} },
+        { data: { id: 'MF', name: 'Mathematical Finance', href: './blogPostings/entry10.html'} }
       ],
       edges: [
         { data: { source: 'root', target: 'math' } },
@@ -52,7 +53,9 @@ var cy = cytoscape({
         { data: { source: 'e5', target: 'e4'} },
         { data: { source: 'e6', target: 'e5'} },
         { data: { source: 'e6', target: 'e4'} },
-        { data: { source: 'e7', target: 'e6'} }
+        { data: { source: 'e7', target: 'e6'} },
+        { data: { source: 'e8', target: 'cs'} },
+        { data: { source: 'MF', target: 'math'} }
 
 
       ]

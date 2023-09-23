@@ -8,7 +8,7 @@
         <script src="https://kit.fontawesome.com/1d463a88a0.js" crossorigin="anonymous"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-        <title>Entry 7</title>   
+        <title>Entry 8</title>   
     </head>
     <body>
         <script>
@@ -19,7 +19,46 @@
         <section class="entry" id="entry">
             <div class="row">
                 <div class="info">
-                    <h1 class="heading"> <span>coming soon</span> April 16th, 2022 <span> 11:18 AM</span></h1>
+                    <h1 class="heading"> <span>Subgroups and Center of a group</span> April 16th, 2022 <span> 11:18 AM</span></h1>
+                    <p>Def: A subset H of a group (G,*) ex: H $\subseteq$ G is a subgroup if:</p>
+                    <p>(identity) 1) $e_G \in H$</p>
+                    <p>(closure) 2) If $h_1,h_2 \in H$, then $h_1 * h_2 \in H$. </p>
+                    <p>(inverse) 3) If h$\in H$ then $h^{-1} \in H$.</p>
+                    <p>If all three are true, we denote the subgroup as H$\leq$G.</p>
+                    <ul>
+                        <li>Examples</li>
+                        <p>1) {e} $\leq$ G and G $\leq$ G. This is always true and these subgroups are called trivial subgroups of G.</p>
+                        <p>2) $\mathbb{Z} \leq \mathbb{R}$ (under addition)</p>
+                        <p>3) $l \in \mathbb{Z}, l\mathbb{Z}$:={$lm | m \in \mathbb{Z}$}$\subseteq \mathbb{Z}$ (also called the left cosets, we will see this later.)</p>
+                        <p>4) $SL_2(\mathbb{R}) = ${$A\in M_2(\mathbb{R}) | det(A)=1$}$\leq GL_2(\mathbb{R})$</p>
+                    </ul>
+                    <p>Proposition: If $H_1 \leq G$, $H_2 \leq G$ are subgroups of G then K = $H_1 \cap H_2 \leq G$</p>
+                    <p>Proof: 1) e $\in H_1$, e $\in H_2$ => e $\in H_1,H_2$. 2) $a,b \in K => a*b\in H_1,H_2$. 3) $a\in K => a^{-1} \in H_1,H_2$, thus $a^{-1} \in H_1 \cap H_2 = k$</p>
+                    <p>Remark: Similarly the intersection of an arbitrary number of subgroups is a subgroup. ex: $2\mathbb{Z} \cap 3\mathbb{Z} = 6\mathbb{Z} \leq \mathbb{Z}$</p>
+                    <ul>
+                        <li>
+                            Centralizer of a group
+                        </li>
+                        <p>Def: Let (G,*) be a group and let g$\in G$. The centralizer of g in G is  &#437; :={$x \in G | x * g = g * x$} </p>
+                        <p>Claim: $\forall g\in G, &#437;(g)$ is a subgroup of G.</p>
+                        <p>Proof: 1) e*g=g*e=g => e $\in &#437;(g)$</p>
+                        <p>2) let $h_1,h_2 \in &#437;(g)$, then $(h_1*h_2)*g = h_1 * (h_2 * g) $=> $h_1 * (g * h_2)$, thus $h_2 \in &#437;(g)$, next $g * (h_1 * h_2) => h_1 \in &#437;(g)$ Thus $h_1 * h_2 \in &#437;(g)$</p>
+                        <p>3) $h \in &#437;(g)$, want $h^{-1} * g = g * h^{-1}$ <=> $h*h^{-1}*g=h*g*h^{-1}$ <=> $g = h * g * h^{-1}$ <=> g*h=h*g.</p>
+                        <li>
+                            Examples
+                        </li>
+                        <p>1) &#437;(2)$\leq \mathbb{Z}$. This is true because  &#437;(2)$= \mathbb{Z}$ since $\mathbb{Z}$ is abelian.</p>
+                        <p>2) $&#437;(\begin{bmatrix} 1 & 0 \\ 0 & 2 \end{bmatrix})$</p>
+                        <p>$\begin{bmatrix} 1 & 0 \\ 0 & 2 \end{bmatrix}\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ = $\begin{bmatrix} a & b \\ c & d \end{bmatrix}\begin{bmatrix} 1 & 0 \\ 0 & 2 \end{bmatrix}$ </p>
+                        <p>=> $\begin{bmatrix} a & b \\ 2c & 2d \end{bmatrix}\begin{bmatrix} a & 2b \\ c & 2d \end{bmatrix}$ => b=c=0., thus  $&#437;(\begin{bmatrix} 1 & 0 \\ 0 & 2 \end{bmatrix})$={$\begin{bmatrix} a & 0 \\ 0 & d \end{bmatrix}$ | ad $\neq 0$ and a,d$\in\mathbb{R}$}</p>
+                        <li>Center of a group</li>
+                        <p>Def: The center &#437;(G) of the group G is {$x\in G | x*g=g*x, \forall g\in G$}
+                        <li>Examples</li>
+                        <p>1) &#437;(G) $\leq$ G => &#437;(G) = $\cap &#437;(g)$ </p>
+                        <p>2) $&#437;(GL_2(\mathbb{R}))$ = {$a \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$ | $a\in\mathbb{R}$\0}</p>
+                        <p>Remark: $&#437;(G)$ is an abelian group.</p>
+                        </p>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -28,7 +67,7 @@
                 <li><br><a href="../blog.html" <button class="btn"> blog home </button></a></li>
                 <li><br><a href="../index.html" <button class="btn"> portfolio <i class="fas fa-house-user"></i></button></a></li>
                 <li><br><a href="../blogPostings/entry7.html" <button class="btn"> previous entry <i class="fas fa-angle-left"></i></button></a></li>
-                <li><br><a href="../blogPostings/entry8.html" <button class="btn"> next entry <i class="fas fa-angle-right"></i></button></a></li>
+                <li><br><a href="../blogPostings/entry9.html" <button class="btn"> next entry <i class="fas fa-angle-right"></i></button></a></li>
             </ul>
         </section>
     </body>
